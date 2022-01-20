@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Anime List</title>
+</head>
+<body>
+    <div id="banner"></div>
+    <script src="../components/banner.js"></script>
+
+    <div id="container" class="flex flex-col justify-center mt-8">
+        <h1 id="name" class="text-3xl font-bold uppercase text-center">TITULO</h1>
+        <h1 id="namejp" class="text-3xl font-bold uppercase text-center">TITULO JAPONES</h1>
+        <div class="grid grid-cols-2 justify-center mx-32 my-12">
+            <img src="https://cdn.myanimelist.net/images/characters/4/277146.jpg" class="w-96" alt="" id="image">
+            <div>
+                <p class="font-bold uppercase text-xl">Synopsis</p>
+                <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus eum cumque atque dolore autem repellendus dolor consectetur inventore quaerat officiis ducimus ut quibusdam quia, sit delectus accusamus sed deleniti!</p>
+                <p class="font-bold uppercase text-xl">Stats</p>
+                <div class="grid grid-cols-2 w-full justify-center items-center text-center">
+                    <div class="flex justify-center items-center font-bold">
+                        <div class="material-icons mx-8">people</div>
+                        <div id="seen" class="text-sm"></div>
+                    </div>
+                    <div class="flex justify-center items-center font-bold">
+                        <div class="material-icons mx-8">star</div>
+                        <div id="score"></div>
+                    </div>
+                    <div class="flex justify-center items-center font-bold">
+                        <div class="material-icons mx-8">favorite</div>
+                        <div id="favs"></div>
+                    </div>
+                    <div class="flex justify-center items-center font-bold">
+                        <div class="material-icons mx-8">format_list_numbered_rtl</div>
+                        <div id="rank">Asd</div>
+                    </div>
+                </div>
+                <button id="animechars" class="my-8 h-auto w-full bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full">
+                    <h1 class="text-3xl text-center py-4 font-bold uppercase text-purple-50">Characters</h1>
+                </button>
+                <button id="episodes" class="h-auto w-full bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full">
+                    <h1 class="text-3xl text-center py-4 font-bold uppercase text-purple-50">Episodes</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../components/fetchanime.js"></script>
+    <script src="../components/events.js"></script>
+</body>
+</html>
